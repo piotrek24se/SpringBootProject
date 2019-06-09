@@ -1,9 +1,9 @@
-package pl.piotrnowicki.springbootfirstproject;
+package pl.piotrnowicki.springbootfirstproject.model;
 
 import lombok.Data;
 
 @Data
-public class User {
+public class UserDTO {
 
     private String firstName;
     private String lastName;
