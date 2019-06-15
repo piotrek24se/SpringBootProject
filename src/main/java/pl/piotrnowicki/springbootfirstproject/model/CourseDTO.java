@@ -1,5 +1,6 @@
 package pl.piotrnowicki.springbootfirstproject.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
