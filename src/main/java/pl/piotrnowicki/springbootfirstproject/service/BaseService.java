@@ -1,22 +1,24 @@
 package pl.piotrnowicki.springbootfirstproject.service;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+import pl.piotrnowicki.springbootfirstproject.persistence.model.BaseEntity;
 
-public interface BaseService<T> {
+import java.io.Serializable;
+import java.util.Collection;
+
+public interface BaseService<T extends BaseEntity, K extends Serializable, R extends JpaRepository<T, K>> {
 
     //CRUD
 
-    public void save(T t);
+    R getRepository();
 
-    public T read(int id);
+    T save(T entity);
 
-    public T readAll(List<Integer> list);
+    T delete(K id);
 
-    public void update(T t);
+    Collection<T> getAll();
 
-    public void delete(T t);
-
-    public void delete(int id);
+    T getOne(K id);
 
 
 
