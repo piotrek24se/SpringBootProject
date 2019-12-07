@@ -29,4 +29,8 @@ public class UserController {
         return userDTO;
     }
 
+    private boolean idExist(UserDTO userDTO) {
+        return userDTO.getId() != null;
+    }
+
 }
