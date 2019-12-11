@@ -11,10 +11,10 @@ import javax.persistence.*;
 @Table(name = "users")
 public class User extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
-    @Column(name = "id")
-    private Long id;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.TABLE)
+//    @Column(name = "id")
+//    private Long id;
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "last_name")

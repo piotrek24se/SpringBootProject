@@ -11,11 +11,10 @@ import javax.persistence.*;
 @Table(name = "courses")
 public class Course extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
-    @Column(name = "id")
-    private Long id;
-
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.TABLE)
+//    @Column(name = "id")
+//    private Long id;
     @Column(name = "name")
     private String name;
 }
